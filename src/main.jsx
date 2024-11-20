@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './styles/index.css'
-import App from './components/App.jsx'
+
 import Root from './routes/root.jsx';
 import ErrorPage from './components/error-page.jsx';
 
@@ -33,7 +33,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
-    <App />   
+    <RouterProvider router={router} />      
   </StrictMode>,
 )
