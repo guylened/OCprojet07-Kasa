@@ -1,14 +1,17 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1440px;
 }
 .contentHeader {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
