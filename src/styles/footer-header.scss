@@ -1,3 +1,9 @@
+@import "./libs/reset-css.scss";
+@import "./libs/variables.scss";
+@import "./libs/fonction.scss";
+@import "./libs/keyframes.scss";
+@import "./libs/mixin.scss";
+
 header {
   display: flex;
   justify-content: center;
@@ -21,7 +27,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
-  background-color: #ff6060;
+  background-color: $primary-color;
   height: 68px;
   width: 210px;
 }
@@ -33,15 +39,11 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
+  @include mediumTypo (black, 24)
 }
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: $second-background-color;  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +69,5 @@ footer {
 }
 
 .copyright {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 140%;
+  @include mediumTypo (white, 24)
 }

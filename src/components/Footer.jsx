@@ -1,4 +1,4 @@
-import '../styles/Footer-Header.css'
+import '../styles/footer-header.scss'
 import logoK from '../assets/Vector.svg'
 import logoM from '../assets/Group.svg'
 import logoS from '../assets/Vector2.svg'

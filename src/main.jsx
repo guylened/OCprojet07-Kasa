@@ -4,30 +4,31 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './styles/index.css'
+import './styles/index.scss'
 
 import Root from './routes/root.jsx';
 import ErrorPage from './components/error-page.jsx';
+import About from './components/About.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    /*children: [     
-      {
+   children: [     
+      /*{
         path: "logements",
         element: <Logements />,
       },
       {
         path: "logements/:id",
         element: <Logement />,
-      },
+      },*/
       {
         path: "about",
         element: <About />,
-      },
-    ],*/
+      }
+    ],
   },
 ]);
 

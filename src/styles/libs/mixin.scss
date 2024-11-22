@@ -1,0 +1,58 @@
+@import "./fonction.scss";
+@import "./keyframes.scss";
+
+
+//Typo normale collapseContent 
+
+@mixin regularTypo ($f-s) {
+    font-family: 'Montserrat', sans-serif;
+    color: black;      
+    font-size: rem($f-s);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.6%;
+}
+
+//Typo medium copyright  - messageError -linkhomeerror
+//navlink - housinglocalisation 18 b -housingtitle 36 r - host 18px red
+
+@mixin mediumTypo ($f-c, $f-s) {
+    font-family: 'Montserrat', sans-serif;
+   color: $f-c;
+    text-align: center;
+    font-size: rem($f-s);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+//Typo bold housingCardText 18px w - bannerTitle - collapseTitle - errorstatus - tag 14 w
+@mixin boldTypo ($f-c, $f-s) {
+    font-family: 'Montserrat', sans-serif;
+    color: $f-c;    
+    font-size: rem($f-s);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%;
+}
+
+
+
+@mixin arrowFavicon {
+    &::before {
+        font-family: "Font Awesome 6 Free";
+        content: "\f004";
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        font-size: xx-large;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 800;        
+        color: white;        
+        cursor: pointer;
+        animation: rotateArrow 600ms ease-in-out forwards;
+    }
+}
+
+

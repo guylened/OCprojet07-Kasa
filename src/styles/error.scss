@@ -1,0 +1,20 @@
+@import "./libs/reset-css.scss";
+@import "./libs/variables.scss";
+@import "./libs/fonction.scss";
+@import "./libs/keyframes.scss";
+@import "./libs/mixin.scss";
+
+.errorStatus {
+    @include boldTypo ($primary-color, 288);
+    text-align: center;
+}
+
+.messageError {
+    @include mediumTypo ($primary-color, 36);
+    text-align: center;
+
+}
+.linkHomeError {
+    @include mediumTypo (black, 18);
+    text-align: center;
+}
