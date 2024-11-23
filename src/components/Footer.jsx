@@ -1,8 +1,8 @@
 import '../styles/footer-header.scss'
-import logoK from '../assets/Vector.svg'
-import logoM from '../assets/Group.svg'
-import logoS from '../assets/Vector2.svg'
-import logoA from '../assets/Vector3.svg'
+import logoK from '../assets/whiteLogo/Vector.svg'
+import logoM from '../assets/whiteLogo/Group.svg'
+import logoS from '../assets/whiteLogo/Vector2.svg'
+import logoA from '../assets/whiteLogo/Vector3.svg'
 
 
 function Footer() {

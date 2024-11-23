@@ -9,6 +9,7 @@ import './styles/index.scss'
 import Root from './routes/root.jsx';
 import ErrorPage from './components/error-page.jsx';
 import About from './components/About.jsx';
+import App from './components/App.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,11 +17,11 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
    children: [     
-      /*{
-        path: "logements",
-        element: <Logements />,
+     {
+        path: "/",
+        element: <App />,
       },
-      {
+       /*{
         path: "logements/:id",
         element: <Logement />,
       },*/

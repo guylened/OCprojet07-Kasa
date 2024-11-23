@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Banner2 } from './Banner'
 import '../styles/collapse.scss';
 import dataAbout from '../data/dataAbout.json';
 import PropTypes from 'prop-types';
@@ -28,6 +29,10 @@ Collapse.propTypes = {
 
 function About() {      
     return (
+        <>
+     <div>
+        <Banner2 />
+     </div>    
     <div className="collapse">
         {dataAbout.map((item, id) => (
         <Collapse
@@ -37,6 +42,7 @@ function About() {
         /> 
 ))}
     </div>
+    </>
 ); 
        
 }

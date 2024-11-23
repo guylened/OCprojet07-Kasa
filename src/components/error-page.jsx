@@ -1,7 +1,7 @@
 import { useRouteError } from "react-router-dom";
 import '../styles/error.scss';
 import Header from "./Header.jsx";
-//import Footer from "./Footer.jsx";
+import Footer from "./Footer.jsx";
 
 
 
@@ -19,7 +19,7 @@ export default function ErrorPage() {
       </p>
       <a href="./" className="linkHomeError">Retourner sur la page d accueil</a>
     </div>    
-    
+    <Footer />
     </>
   );
 }

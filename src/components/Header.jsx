@@ -1,15 +1,15 @@
 import { NavLink } from "react-router-dom";
 import '../styles/footer-header.scss'
-import logoK from '../assets/Vector.svg'
-import logoM from '../assets/Group.svg'
-import logoS from '../assets/Vector2.svg'
-import logoA from '../assets/Vector3.svg'
+import logoK from '../assets/redLogo/Vector.svg';
+import logoM from '../assets/redLogo/Group.svg';
+import logoS from '../assets/redLogo/Vector2.svg';
+import logoA from '../assets/redLogo/Vector3.svg';
 
 
 
-function Header() {
+export function Header() {
 
-    return <div className='contentHeader'>
+    return (<div className='contentHeader'>
         <div className="logoVecHeader">
             <img src={logoK} alt="Logo Kasa lettre K" />
             <img src={logoM} alt="Logo Kasa icone maison" />
@@ -20,7 +20,7 @@ function Header() {
             <NavLink to="/">Accueil</NavLink>  
             <NavLink to="/about">A propos</NavLink>
         </nav>  
-    </div>
+    </div>) 
 
 }
 

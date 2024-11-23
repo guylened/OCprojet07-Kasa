@@ -26,7 +26,7 @@
     line-height: 142.6%;
 }
 
-//Typo bold housingCardText 18px w - bannerTitle - collapseTitle - errorstatus - tag 14 w
+//Typo bold housingCardText - bannerTitle - collapseTitle - errorstatus - tag 14 w
 @mixin boldTypo ($f-c, $f-s) {
     font-family: 'Montserrat', sans-serif;
     color: $f-c;    

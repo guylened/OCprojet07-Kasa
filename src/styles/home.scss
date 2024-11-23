@@ -1,0 +1,32 @@
+@import "./libs/reset-css.scss";
+@import "./libs/variables.scss";
+@import "./libs/fonction.scss";
+@import "./libs/keyframes.scss";
+@import "./libs/mixin.scss";
+
+
+
+.housingInsert {
+
+
+}
+
+.housingCard {
+
+}
+
+.housingCard img {
+    background: url("/wp-content/uploads/2019/02/fond-dots.png") no-repeat left top, linear-gradient(to right, 
+    #3480ab, 
+    #aec53e);
+      background-size: cover;
+}
+
+.linearGradient {
+
+}
+
+.housingCardText {
+    @include boldTypo (white, 18)
+}
+
