@@ -1,40 +1,40 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import './styles/index.scss'
-
-import Root from './routes/root.jsx';
-import ErrorPage from './components/error-page.jsx';
-import About from './components/About.jsx';
-import App from './components/App.jsx';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./styles/index.scss";
+import Root from "./routes/root.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import About from "./pages/About.jsx";
+import Home from "./pages/Home.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-   children: [     
-     {
+    children: [
+      {
         path: "/",
-        element: <App />,
+        element: <Home />,
       },
-       /*{
+      {
+        path: "404",
+        element: <ErrorPage />,
+      },
+      /*{
         path: "logements/:id",
         element: <Logement />,
       },*/
       {
         path: "about",
         element: <About />,
-      }
+      },
     ],
   },
 ]);
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />      
-  </StrictMode>,
-)
+    <RouterProvider router={router} />
+  </StrictMode>
+);

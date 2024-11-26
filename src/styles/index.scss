@@ -3,13 +3,18 @@
 @import "./libs/fonction.scss";
 @import "./libs/keyframes.scss";
 @import "./libs/mixin.scss";
+@import "./banner.scss";
+@import "./collapse.scss";
+@import "./error.scss";
+@import "./footer-header.scss";
+@import "./home.scss";
 
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  color: #000000;    
+  color: #000000;
 }
 
 a {
@@ -22,17 +27,15 @@ a:hover {
 body {
   background-color: $primary-background-color;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
-  min-width: 320px;  
-
+  min-width: 320px;
 }
 
-main {  
+main {
   width: 1440px;
   padding-left: 100px;
   padding-right: 100px;
 }
-

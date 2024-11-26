@@ -1,9 +1,3 @@
-@import "./libs/reset-css.scss";
-@import "./libs/variables.scss";
-@import "./libs/fonction.scss";
-@import "./libs/keyframes.scss";
-@import "./libs/mixin.scss";
-
 header {
   display: flex;
   justify-content: center;
@@ -11,7 +5,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 100px;
-  padding-right: 100px;    
+  padding-right: 100px;
 }
 .contentHeader {
   width: 100%;
@@ -38,11 +32,11 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
-  @include mediumTypo (black, 24)
+  @include mediumTypo(black, 24);
 }
 
 footer {
-  background-color: $second-background-color;  
+  background-color: $second-background-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +45,7 @@ footer {
   padding-bottom: 29px;
   width: 100%;
 }
-.contentFooter {  
+.contentFooter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,5 +62,5 @@ footer {
 }
 
 .copyright {
-  @include mediumTypo (white, 24)
+  @include mediumTypo(white, 24);
 }
