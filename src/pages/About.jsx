@@ -4,9 +4,14 @@ import "../styles/index.scss";
 import dataAbout from "../data/dataAbout.json";
 import PropTypes from "prop-types";
 
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
+
 function Collapse({ title, content }) {
   const [show, setShow] = useState(false);
-
+  const icon = <i className="fa-solid fa-angle-up" aria-hidden="true"></i>;
   return (
     <div className="collapse-card">
       <button
@@ -16,17 +21,13 @@ function Collapse({ title, content }) {
         }}
       >
         {title}
+        {icon}
       </button>
 
       {show && <p className="collapse-content">{content}</p>}
     </div>
   );
 }
-
-Collapse.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-};
 
 function About() {
   return (

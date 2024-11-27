@@ -1,29 +1,45 @@
 import "../styles/index.scss";
 import { Banner1 } from "../components/Banner";
-//import dataHousing from '../data/dataHousing.json'
+import dataHousing from "../data/dataHousing.json";
+import PropTypes from "prop-types";
+
+HousingCards.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      cover: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+function HousingCards({ data }) {
+  console.log(data);
+  return (
+    <div className="housingInsert">
+      {data.map((housing) => (
+        <a
+          className="housingCard"
+          key={housing.id}
+          href={`./housingCard:${housing.id}`}
+        >
+          <article>
+            <img src={housing.cover} alt={housing.title} />
+            <p className="housingCardText">{housing.title}</p>
+          </article>
+        </a>
+      ))}
+    </div>
+  );
+}
 
 function Home() {
   return (
     <>
       <Banner1 />
-      <div className="housingInsert">
-        <a href="">
-          <article className="housingCard">
-            <img
-              src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
-              alt="test"
-            />
-            <p className="housingCardText">test de text</p>
-          </article>
-        </a>
-      </div>
+      <HousingCards data={dataHousing} />
     </>
   );
 }
 
 export default Home;
-
-/*{dataHousing.map((item, id) => (        
-        key={id}  
-        title={item.title}
-        img={item.content}*/
