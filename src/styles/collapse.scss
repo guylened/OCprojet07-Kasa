@@ -25,12 +25,29 @@
   background-color: $primary-color;
   @include boldTypo(white, 24);
   padding: 10px;
-  text-align: left;
+}
+
+.fa-style {
+  transition: all 120ms ease-in-out;
+}
+.active .fa-style {
+  transform: rotate(-180deg);
 }
 
 .collapse-content {
+  visibility: hidden;
   width: 100%;
-  @include regularTypo(18);
-  padding: 10px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
   background-color: $lightgrey;
+  @include regularTypo(18);
+  transition: all 120ms ease-in;
+}
+.active .collapse-content {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  padding: 10px;
 }

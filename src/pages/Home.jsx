@@ -14,14 +14,13 @@ HousingCards.propTypes = {
 };
 
 function HousingCards({ data }) {
-  console.log(data);
   return (
     <div className="housingInsert">
       {data.map((housing) => (
         <a
           className="housingCard"
           key={housing.id}
-          href={`./housingCard:${housing.id}`}
+          href={`./housing/${housing.id}`}
         >
           <article>
             <img src={housing.cover} alt={housing.title} />
