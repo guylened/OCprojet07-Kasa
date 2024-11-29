@@ -5,13 +5,19 @@ import arrowLeft from "../assets/arrowLeft.svg";
 import arrowRight from "../assets/arrowRight.svg";
 
 export const Carousel = ({ data }) => {
+  const arrayPictures = data.pictures;
+  const title = data.title;
+  const keyId = `pictures${data.id}`;
+  console.log(arrayPictures)
+  console.log(title)
+  console.log(keyId)
   const [slide, setSlide] = useState(0);
   const nextSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+    setSlide(slide === arrayPictures.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+    setSlide(slide === 0 ? arrayPictures.length - 1 : slide - 1);
   };
 
   return (
@@ -23,12 +29,12 @@ export const Carousel = ({ data }) => {
           onClick={prevSlide}
           className="arrow arrow-left"
         />
-        {data.map((housing, idx) => {
+        {arrayPictures.map((img, idx) => {
           return (
             <img
-              key={housing.id.idx}
-              src={housing.pictures}
-              alt={housing.title}
+              key={`${keyId}-${idx}`}
+              src={img}
+              alt={`${title}-${idx+1}`}
               className={slide === idx ? "slide" : "slide slide-hidden"}
             />
           );
@@ -45,7 +51,9 @@ export const Carousel = ({ data }) => {
 };
 
 Carousel.propTypes = {
-  data: PropTypes.array.isRequired,
-  pictures: PropTypes.array.isRequired,
-  title: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
 };

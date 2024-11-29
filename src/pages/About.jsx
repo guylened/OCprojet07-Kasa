@@ -9,7 +9,7 @@ function About() {
       <div>
         <Banner2 />
       </div>
-      <div className="collapse">
+      <div className="collapseSection">
         {dataAbout.map((item) => (
           <Collapse key={item.id} title={item.title} content={item.content} />
         ))}

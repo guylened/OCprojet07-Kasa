@@ -1,48 +1,44 @@
-/*.housing-insert {
-  background: grey;
-  padding: 45px 18px 65px;
+
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;  
 }
 
-.housing-cards {
+
+.titleSection {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+
+}
+
+.localisation {
+
+}
+
+.tagSection {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card {
-  @include Flexbox(column, left, center);
-  gap: 16px;
-  width: 100%;
-  border-radius: 15px;
-  background: $white-grey-black;
-  box-shadow: $card-menu-shadow;
-  @include Roboto(500, rem(16), black);
-  position: relative;
+.tag {
+
 }
 
-.card img {
-  width: 100%;
-  height: 231px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
+.hostSection {
+
 }
 
-.card-content {
-  @include Flexbox(row, space-between, center);
-  width: 100%;
-  padding: 0 25px 15px 13px;
-  height: calc(100% - 231px);
-}
+.hostProfil {}
 
-.card-txt {
-  gap: 3px;
-  @include Flexbox(column, center, center);
-}
+.hostName {}
 
-.card-title {
-  @include Roboto(500, rem(18), black);
-}
+.hostPricture {}
 
-.card-subtitle {
-  @include Roboto(300, rem(17), black);
-}
+.housingRating {}

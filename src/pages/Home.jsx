@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/index.scss";
 import { Banner1 } from "../components/Banner";
 import dataHousing from "../data/dataHousing.json";
@@ -17,16 +18,16 @@ function HousingCards({ data }) {
   return (
     <div className="housingInsert">
       {data.map((housing) => (
-        <a
+        <Link
           className="housingCard"
           key={housing.id}
-          href={`./housing/${housing.id}`}
+          to={`/housing/${housing.id}`}
         >
           <article>
             <img src={housing.cover} alt={housing.title} />
             <p className="housingCardText">{housing.title}</p>
           </article>
-        </a>
+        </Link>
       ))}
     </div>
   );
