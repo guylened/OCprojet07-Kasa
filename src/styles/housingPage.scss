@@ -4,6 +4,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;  
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 
@@ -11,34 +13,68 @@
   display: flex;
   flex-direction:column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start; 
 }
 
 .title {
-
+  @include mediumTypo ($primary-color, 36);
+  
 }
 
-.localisation {
+.location {
+  @include mediumTypo (black, 18);
+  
 
 }
 
 .tagSection {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;  
+  gap: 7px;
 }
 
 .tag {
+  @include boldTypo (white, 14);   
+  vertical-align:middle; 
+  text-align: center;
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+background: $primary-color;
 
 }
+
 
 .hostSection {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-end; 
 
 }
 
-.hostProfil {}
+.hostProfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  gap:10px;
 
-.hostName {}
+}
 
-.hostPricture {}
+.hostName {
+  @include mediumTypo ($primary-color, 18)
+}
 
-.housingRating {}
+.hostPicture {
+  position: relative;  
+  border-radius:50%;
+  width:64px;
+  height:64px;
+  object-fit: cover;
+}
+
+
+//.housingRating {}

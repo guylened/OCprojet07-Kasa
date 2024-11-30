@@ -3,6 +3,8 @@ import "../styles/index.scss";
 import dataHousing from "../data/dataHousing.json";
 import Collapse from "../components/Collapse";
 import { Carousel } from "../components/Carousel";
+import { TitleSection } from "../components/housingInfoSection";
+import { HostSection } from "../components/housingHostSection";
 
 export const HousingPage = () => {
   const {id} = useParams(); 
@@ -17,9 +19,8 @@ export const HousingPage = () => {
         <Carousel data={housingInfo} />
       </div>
       <div className="infoSection">
-        div
-        {housingInfo.title}
-
+        <TitleSection data={housingInfo}/>
+        <HostSection data={housingInfo} />
       </div>
       <div className="collapseSection2">        
              <Collapse
