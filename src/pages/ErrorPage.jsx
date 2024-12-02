@@ -3,7 +3,7 @@ import "../styles/index.scss";
 //import Header from "../layout/Header.jsx";
 //import Footer from "../layout/Footer.jsx";
 
-export default function ErrorPage() {
+export const ErrorPage = () => {
   const error = useRouteError();
   console.error(error);
   return (

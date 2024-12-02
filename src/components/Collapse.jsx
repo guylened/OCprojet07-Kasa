@@ -2,12 +2,7 @@ import { useState } from "react";
 import "../styles/index.scss";
 import PropTypes from "prop-types";
 
-Collapse.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-};
-
-function Collapse({ title, content }) {
+export const Collapse = ({ title, content }) => {
   const [active, setActive] = useState(false);
   const icon = (
     <i
@@ -25,9 +20,23 @@ function Collapse({ title, content }) {
         {title}
         {icon}
       </div>
-      <div className={`collapse-content ${active && "active"}`}>{content}</div>
+      <div className={`collapse-content ${active && "active"}`}>{ Array.isArray(content) ? (
+                <ul>
+                  {content.map((contentItem, idx) => (
+                    <li key={`item${idx + 1}`}>{contentItem}</li>
+                  ))}
+                </ul>
+              ) : (
+                content
+              )}</div>
     </div>
   );
 }
 
-export default Collapse;
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
+};

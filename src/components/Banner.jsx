@@ -2,7 +2,7 @@ import paysage1 from "../assets/paysage1.png";
 import paysage2 from "../assets/paysage2.png";
 import "../styles/index.scss";
 
-export function Banner1() {
+export const Banner1 = () => {
   return (
     <>
       <div className="banner">
@@ -13,7 +13,7 @@ export function Banner1() {
   );
 }
 
-export function Banner2() {
+export const Banner2 = () => {
   return (
     <>
       <div className="banner">

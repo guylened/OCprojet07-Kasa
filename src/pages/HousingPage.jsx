@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import "../styles/index.scss";
 import dataHousing from "../data/dataHousing.json";
-import Collapse from "../components/Collapse";
+import {Collapse} from "../components/Collapse";
 import { Carousel } from "../components/Carousel";
 import { TitleSection } from "../components/housingInfoSection";
 import { HostSection } from "../components/housingHostSection";
@@ -31,14 +31,14 @@ export const HousingPage = () => {
             <Collapse
               key={`Equ${housingInfo.id}`}
               title="Equipements"
-              content={housingInfo.equipments.map((item, idx) => (
-                <p key={`item${idx + 1}`}>{item}</p>
-              )
-              )}
+              content={housingInfo.equipments}
             /> 
       </div>
     </>
   );
 };
 
-/*  */
+/*{housingInfo.equipments.map((item, idx) => (
+                <p key={`item${idx + 1}`}>{item}</p>
+              )
+              )}*/

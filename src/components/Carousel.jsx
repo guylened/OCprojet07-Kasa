@@ -43,6 +43,9 @@ export const Carousel = ({ data }) => {
           onClick={nextSlide}
           className="arrow arrow-right"
         />
+        <div className="carouselCounter">
+        {slide + 1} / {arrayPictures.length}
+        </div>
       </div>
     </>
   );

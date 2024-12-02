@@ -39,10 +39,10 @@
   @include boldTypo (white, 14);   
   vertical-align:middle; 
   text-align: center;
-  width: 115px;
-  height: 25px;
+  padding: 4px 10px;
   border-radius: 10px;
 background: $primary-color;
+line-height: normal;
 
 }
 
@@ -77,4 +77,14 @@ background: $primary-color;
 }
 
 
-//.housingRating {}
+.housingRating {
+  margin : 10px;
+  .fa-style-r {
+    color: $primary-color;
+  }
+  .fa-style-g {
+    color: $mediumgrey;
+  }
+
+  
+}

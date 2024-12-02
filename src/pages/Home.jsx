@@ -4,17 +4,8 @@ import { Banner1 } from "../components/Banner";
 import dataHousing from "../data/dataHousing.json";
 import PropTypes from "prop-types";
 
-HousingCards.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      cover: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
 
-function HousingCards({ data }) {
+export const HousingCards = ({ data }) => {
   return (
     <div className="housingInsert">
       {data.map((housing) => (
@@ -33,7 +24,17 @@ function HousingCards({ data }) {
   );
 }
 
-function Home() {
+HousingCards.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      cover: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+export const Home = () => {
   return (
     <>
       <Banner1 />
@@ -41,5 +42,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

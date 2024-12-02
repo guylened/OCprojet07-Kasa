@@ -51,7 +51,7 @@
   overflow: hidden;
   background-color: $lightgrey;
   @include regularTypo(18);
-  transition: all 120ms ease-in;
+  transition: all 140ms ease-in;
 }
 .active .collapse-content {
   visibility: visible;

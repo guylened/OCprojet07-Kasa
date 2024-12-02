@@ -1,7 +1,7 @@
 import "../styles/index.scss";
 import logo from "../assets/WhiteLogo.svg";
 
-function Footer() {
+export const Footer = () => {
   return (
     <div className="contentFooter">
       <div className="logoVecFooter">
@@ -11,5 +11,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;
