@@ -8,8 +8,7 @@ export const ErrorPage = () => {
   console.error(error);
   return (
     <>
-      <div>
-        <h2 className="errorStatus">404</h2>
+      <h2 className="errorStatus">404</h2>
         <p className="messageError">
           Oups! La page que vous demandez n existe pas.
         </p>
@@ -18,8 +17,7 @@ export const ErrorPage = () => {
         </p>
         <a href="./" className="linkHomeError">
           Retourner sur la page d accueil
-        </a>
-      </div>
+        </a>      
     </>
   );
 }

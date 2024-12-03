@@ -7,9 +7,7 @@ export const About = () => {
   
   return (
     <>
-      <div>
-        <Banner2 />
-      </div>
+      <Banner2 />      
       <div className="collapseSection">
         {dataAbout.map((item) => (
           

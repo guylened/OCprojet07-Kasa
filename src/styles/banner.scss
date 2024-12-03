@@ -1,7 +1,11 @@
 .banner {
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 223px;
-  width: 1240px;
+  width: 100%;
   border-radius: 25px;
   background: $second-background-color;
 }

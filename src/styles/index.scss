@@ -30,14 +30,12 @@ body {
   background-color: $primary-background-color;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  min-width: 320px;
+  width: 100%;  
 }
 
-main {
-  width: 1440px;
+main {  
   padding-left: 100px;
   padding-right: 100px;
 }

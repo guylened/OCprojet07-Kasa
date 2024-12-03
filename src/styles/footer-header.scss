@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 100px;
@@ -36,6 +37,7 @@ header {
 }
 
 footer {
+  position: relative;
   background-color: $second-background-color;
   display: flex;
   flex-direction: column;
