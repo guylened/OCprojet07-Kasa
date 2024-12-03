@@ -1,0 +1,67 @@
+
+@media screen and (width <= 1024px) {
+ 
+}
+
+
+@media screen and (width <= 768px) {
+
+
+    /*footer*/
+    footer {
+        margin-top: 27px ;
+        padding-bottom: 66px;
+        
+        .copyright {
+            @include mediumTypo(white, 12);
+            width: 134px;
+            height: 46px;
+          }        
+    }
+
+    /*Header*/
+
+    header { 
+        padding: 20px 20px 27px; 
+        
+
+        .logoVecHeader {
+            height: 47px;
+            width: 145px;
+        }
+
+        .nav {            
+            gap: 26px;
+            @include mediumTypo(black, 12);
+          }
+    }
+    // main 
+    main {      
+        padding: 0 20px;        
+    }
+
+   
+
+    /*Page Home*/
+    .housingInsert {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;        
+        background-color: $primary-background-color;
+        border-radius: 0;
+        padding: 0 ;
+        margin-top: 22px;  
+      }
+
+    
+
+    //Page Logement
+
+    //Page About
+
+   // Page 404
+
+    
+
+}
