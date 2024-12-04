@@ -22,8 +22,8 @@ export const Collapse = ({ title, content }) => {
       </div>
       <div className={`collapse-content ${active && "active"}`}>{ Array.isArray(content) ? (
                 <ul>
-                  {content.map((contentItem, idx) => (
-                    <li key={`item${idx + 1}`}>{contentItem}</li>
+                  {content.map((contentItem) => (
+                    <li key={contentItem}>{contentItem}</li>
                   ))}
                 </ul>
               ) : (

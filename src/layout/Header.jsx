@@ -4,6 +4,7 @@ import logo from "../assets/RedLogo.svg";
 
 export const Header = () => {
   return (
+    <header>
     <div className="contentHeader">
       <div className="logoVecHeader">
         <img src={logo} alt="Logo Kasa" />
@@ -13,6 +14,7 @@ export const Header = () => {
         <NavLink to="/about">A propos</NavLink>
       </nav>
     </div>
+    </header>
   );
 }
 

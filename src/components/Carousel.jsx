@@ -6,8 +6,7 @@ import arrowRight from "../assets/arrowRight.svg";
 
 export const Carousel = ({ data }) => {
   const arrayPictures = data.pictures;
-  const title = data.title;
-  const keyId = `pictures${data.id}`;
+  const title = data.title;  
   
   const [slide, setSlide] = useState(0);
   const nextSlide = () => {
@@ -30,9 +29,9 @@ export const Carousel = ({ data }) => {
         {arrayPictures.map((img, idx) => {
           return (
             <img
-              key={`${keyId}-${idx}`}
+              key={img}
               src={img}
-              alt={`${title}-${idx+1}`}
+              alt={title}
               className={slide === idx ? "slide" : "slide slide-hidden"}
             />
           );

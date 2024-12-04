@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/index.scss";
-import { Banner1 } from "../components/Banner";
+import { Banner } from "../components/Banner";
+import paysage1 from "../assets/paysage1.png";
 import dataHousing from "../data/dataHousing.json";
 import PropTypes from "prop-types";
 
@@ -37,7 +38,7 @@ HousingCards.propTypes = {
 export const Home = () => {
   return (
     <>
-      <Banner1 />
+      <Banner imgSrc={paysage1} isTitle={true} style={false}/>
       <HousingCards data={dataHousing} />
     </>
   );

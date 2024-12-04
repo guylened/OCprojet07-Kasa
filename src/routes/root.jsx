@@ -5,15 +5,11 @@ import {Header} from "../layout/Header";
 export const Root = () => {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />      
       <main>
         <Outlet />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      </main>      
+      <Footer />      
     </>
   );
 }

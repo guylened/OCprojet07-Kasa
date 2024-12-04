@@ -12,6 +12,9 @@
 @import "./housingPage.scss";
 @import "./mediaqueries.scss";
 
+#root {
+  width: 100%;
+}
 :root {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;

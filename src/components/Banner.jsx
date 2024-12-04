@@ -1,7 +1,23 @@
-import paysage1 from "../assets/paysage1.png";
-import paysage2 from "../assets/paysage2.png";
+import PropTypes from "prop-types";
 import "../styles/index.scss";
 
+export const Banner = ({ imgSrc, isTitle, style }) => {
+  return (
+    <div className="banner">
+      <img src={imgSrc} alt="bannière paysage" style={style} />
+      {isTitle && (
+        <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
+      )}
+    </div>
+  );
+};
+
+Banner.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  isTitle: PropTypes.bool.isRequired,  
+};
+
+/*
 export const Banner1 = () => {
   return (
     <>
@@ -21,4 +37,4 @@ export const Banner2 = () => {
       </div>
     </>
   );
-}
+}*/

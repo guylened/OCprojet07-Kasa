@@ -8,9 +8,9 @@ export const TitleSection = ({data}) => {
         <div className="title">{data.title}</div>
         <div className="location">{data.location}</div>
         <div className="tagSection">
-        {data.tags.map((tag, idx) => {
+        {data.tags.map((tag) => {
                     return (
-                        <div key={`tag${data.id}${idx +1}`} className="tag">{tag}</div>
+                        <div key={tag} className="tag">{tag}</div>
                     )
                 })}
         </div>
