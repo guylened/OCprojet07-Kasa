@@ -8,16 +8,15 @@ export const ErrorPage = () => {
   console.error(error);
   return (
     <>
-      <h2 className="errorStatus">404</h2>
+    <div className="errorSection">
+    <p className="errorStatus">404</p>
         <p className="messageError">
           Oups! La page que vous demandez n existe pas.
-        </p>
-        <p>
-          <i>{error.statusText || error.message}</i>
-        </p>
+        </p>        
         <a href="./" className="linkHomeError">
           Retourner sur la page d accueil
-        </a>      
+        </a>  
+    </div>          
     </>
   );
 }

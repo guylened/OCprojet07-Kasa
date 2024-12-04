@@ -1,13 +1,22 @@
+.errorSection{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  gap: 139px;
+  margin: 139px 0;
+}
+
 .errorStatus {
-  @include boldTypo($primary-color, 288);
-  text-align: center;
+  @include boldTypo($primary-color, 288);  
+  line-height: normal
 }
 
 .messageError {
-  @include mediumTypo($primary-color, 36);
-  text-align: center;
+  @include mediumTypo($primary-color, 36);  
+  line-height: normal
 }
 .linkHomeError {
-  @include mediumTypo(black, 18);
-  text-align: center;
+  @include mediumTypo(black, 18);  
+  line-height: normal
 }

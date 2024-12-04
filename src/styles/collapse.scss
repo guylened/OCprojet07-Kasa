@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 40px;  
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -15,9 +14,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px; 
+  gap: 76px;
+  margin-top: 24px;
+  
 }
 
 .collapse-card {
@@ -33,7 +32,7 @@
   border: none;
   background-color: $primary-color;
   @include boldTypo(white, 24);
-  padding: 10px;
+  padding: 10px 15px 10px 15px;
 }
 
 .fa-style {
@@ -49,6 +48,7 @@
   height: 0;
   opacity: 0;
   overflow: hidden;
+  border-radius: 0 0 5px 5px;
   background-color: $lightgrey;
   @include regularTypo(18);
   transition: all 140ms ease-in;
@@ -58,5 +58,5 @@
   height: auto;
   opacity: 1;
   overflow: visible;
-  padding: 10px;
+  padding: 20px;
 }
