@@ -6,7 +6,7 @@ export const Root = () => {
   return (
     <>
       <Header />      
-      <main>
+      <main >
         <Outlet />
       </main>      
       <Footer />      

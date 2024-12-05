@@ -1,17 +1,16 @@
 import { useParams } from "react-router-dom";
-import "../styles/index.scss";
-import dataHousing from "../data/dataHousing.json";
-import {Collapse} from "../components/Collapse";
-import { Carousel } from "../components/Carousel";
-import { TitleSection } from "../components/housingInfoSection";
-import { HostSection } from "../components/housingHostSection";
+import "../../styles/index.scss";
+import dataHousing from "../../data/dataHousing.json";
+import {Collapse} from "../../components/Collapse";
+import { Carousel } from "../../components/Carousel";
+import { TitleSection } from "./hpTitleSection";
+import { HostSection } from "./hpHostSection";
 
 export const HousingPage = () => {
   const {id} = useParams(); 
   const housingInfo = dataHousing.find(
     (housing) => housing.id === id
-  );
-  console.log(housingInfo);
+  );  
   return (
     <>
       
@@ -38,7 +37,4 @@ export const HousingPage = () => {
   );
 };
 
-/*{housingInfo.equipments.map((item, idx) => (
-                <p key={`item${idx + 1}`}>{item}</p>
-              )
-              )}*/
+

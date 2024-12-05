@@ -5,8 +5,8 @@ import "./styles/index.scss";
 import {Root} from "./routes/root.jsx";
 import { ErrorPage } from "./pages/ErrorPage.jsx";
 import { About } from "./pages/About.jsx";
-import { Home } from "./pages/Home.jsx";
-import { HousingPage } from "./pages/HousingPage.jsx";
+import { Home } from "./pages/Home/Home.jsx";
+import { HousingPage } from "./pages/HousingPage/HousingPage.jsx";
 
 const router = createBrowserRouter([
   {

@@ -1,8 +1,5 @@
+import "../../styles/index.scss";
 import { Link } from "react-router-dom";
-import "../styles/index.scss";
-import { Banner } from "../components/Banner";
-import paysage1 from "../assets/paysage1.png";
-import dataHousing from "../data/dataHousing.json";
 import PropTypes from "prop-types";
 
 
@@ -34,12 +31,3 @@ HousingCards.propTypes = {
     })
   ).isRequired,
 };
-
-export const Home = () => {
-  return (
-    <>
-      <Banner imgSrc={paysage1} isTitle={true} style={false}/>
-      <HousingCards data={dataHousing} />
-    </>
-  );
-}

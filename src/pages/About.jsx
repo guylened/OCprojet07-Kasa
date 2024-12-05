@@ -1,14 +1,14 @@
-import { Banner } from "../components/Banner";
+import { Banner2 } from "../components/Banner2";
 import {Collapse} from "../components/Collapse";
 import "../styles/index.scss";
 import dataAbout from "../data/dataAbout.json";
-import paysage2 from "../assets/paysage2.png";
+
 
 export const About = () => {
   
   return (
     <>
-      <Banner imgSrc={paysage2} isTitle={false} style={true}/>      
+      <Banner2 />      
       <div className="collapseSection">
         {dataAbout.map((item) => (
           
