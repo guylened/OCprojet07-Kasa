@@ -11,13 +11,15 @@ export const ErrorPage = () => {
   return (
     <>
     <Header />
+    <main>
     <div className="errorSection">
     <p className="errorStatus">404</p>
         <p className="messageError">{p}        
         </p>        
         <a href="./" className="linkHomeError"> {a}          
         </a>  
-    </div>   
+    </div> 
+    </main>  
     <Footer /> 
     </>      
     

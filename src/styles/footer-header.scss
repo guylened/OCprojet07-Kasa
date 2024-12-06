@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 43px;
+  gap: 20px;
 }
 
 .logoVecHeader {
@@ -20,10 +20,10 @@ header {
   align-items: baseline;
   height: 68px;
   width: 210px;
-}
-.logoVecHeader img {
-  width: 100%;
-  fill: $primary-color;
+  img {
+    width: 100%;
+    fill: $primary-color;
+  }
 }
 
 .nav {

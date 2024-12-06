@@ -2,8 +2,8 @@ import "../styles/index.scss";
 import PropTypes from "prop-types";
 
 export const Rating = ({value, id}) => { 	
-    const redStar = Array(5).fill(<i className={`fa-xl fa-solid fa-star fa-style-r`}  aria-hidden="true"></i>)
-    const greyStar =  Array(5).fill(<i className={`fa-xl fa-solid fa-star fa-style-g`}  aria-hidden="true"></i>)
+    const redStar = Array(5).fill(<i className={`fa-solid fa-star fa-style-r`}  aria-hidden="true"></i>)
+    const greyStar =  Array(5).fill(<i className={`fa-solid fa-star fa-style-g`}  aria-hidden="true"></i>)
 	
 	return (
         <div className="rating">		

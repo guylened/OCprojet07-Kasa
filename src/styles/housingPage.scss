@@ -39,7 +39,7 @@
   @include boldTypo (white, 14);   
   vertical-align:middle; 
   text-align: center;
-  padding: 4px 20px;
+  padding: 2px 20px;
   border-radius: 10px;
 background: $primary-color;
 line-height: normal;
@@ -78,17 +78,19 @@ line-height: normal;
 }
 
 
-.housingRating {
+.rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 7px;  
+  gap: 9px;  
   margin-top : 30px;
   .fa-style-r {
-    color: $primary-color;   
+    color: $primary-color; 
+    font-size: large;  
   }
   .fa-style-g {
     color: $mediumgrey;
+    font-size: large;
   }
 
   

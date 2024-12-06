@@ -4,23 +4,8 @@
 }
 */
 
-@media screen and (width <= 380px) { 
-  main {  
-    width: 100%;    
-    padding:  0 20px;        
-  }
-
-    /*footer*/
-    footer {
-        margin-top: 27px ;
-        padding-bottom: 66px;
-        
-        .copyright {
-            @include mediumTypo(white, 12);
-            width: 134px;
-            height: 46px;
-          }        
-    }
+@media screen and (max-width: 767px) { 
+    
 
     /*Header*/
 
@@ -36,24 +21,39 @@
         .nav {            
             gap: 26px;
             @include mediumTypo(black, 12);
+            text-transform: uppercase;
           }
     }
-    // main 
-    
+   
+    /*footer*/
+    footer {
+      margin-top: 27px;
+      padding-bottom: 58px;
+     
+      .contentFooter {
+        gap: 20px;
+      }
+      
+      .copyright {
+          @include mediumTypo(white, 12);
+          width: 134px;
+          height: 46px;
+          padding: 0 10px;
+        }        
+  }
 
-   // Banner 
+   /*Banner*/
    .banner {
     height: 111px;
     border-radius: 10px;
+    img {   
+      border-radius: 10px;    
+    }
    }
-
-   .banner img {   
-    border-radius: 10px;    
-  }
   
   .bannerTitle {
-    left: 10%;
-    transform: translateX(-50%);    
+    left: 30%;   
+    transform: translateX(-15%);   
     @include boldTypo(white, 24);
   }
 
@@ -70,16 +70,11 @@
       }
 
       .housingCard {
-        width: 100%;
-        height: 255px;  
-       
-      }
-            
-      .housingCard img {
-         height: 255px;        
         
+        height: 255px;         
       }
-    // collaspe
+        
+    /*collaspe*/
     .collapseSection {
         display: flex;
         flex-direction: column;
@@ -97,7 +92,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        margin-top: 20px;
+        margin-top: 13px;
         
       }
       
@@ -107,7 +102,7 @@
       
       .collapse-title {
        @include boldTypo(white, 13);
-        padding: 10px;
+        padding: 7px 10px;
       }
       
           
@@ -118,7 +113,10 @@
       .active .collapse-content {        
         padding: 15px;
       }
-    // Carousel
+      .fa-style {
+        font-size: large;
+      }
+    /*Carousel*/
     .carousel {
              
         height: 255px;
@@ -149,15 +147,20 @@
        
       }
 
-    //Page Logement
+    /*Page Logement*/
 
     .infoSection {
+      width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;  
+        align-items: left;  
         margin-top: 15px;
         margin-bottom: 20px;
+      }
+
+      .titleSection {
+        width: 100%;         
       }
       
       .title {
@@ -171,18 +174,19 @@
       }
       
       .tagSection {
-        margin-top: 10px;  
+        margin-top: 7px;  
         gap: 7px;
       }
       
       .tag {
-        @include boldTypo (white, 10);        
+        @include boldTypo (white, 10);           
       
       }
       
       
       .hostSection {
-        margin-top: 24px;
+        width: 100%;
+        margin-top: 16px;
         display: flex;
         flex-direction:row-reverse;
         justify-content: space-between;
@@ -213,18 +217,20 @@
         gap: 5px;  
         margin-top : 0px;
         .fa-style-r {
-          color: $primary-color;   
+          color: $primary-color;
+          font-size: small;
         }
         .fa-style-g {
           color: $mediumgrey;
+          font-size: small;
         }
-      // modifier taille icones        
+      /*modifier taille icones*/        
       }
 
-   // Page 404
+   /*Page 404*/
    .errorSection{
     gap: 113px;
-    margin: 113px 0;
+    margin: 86px 0;
   }
   
   .errorStatus {
@@ -241,6 +247,4 @@
     
   }
   
-    
-
 }
