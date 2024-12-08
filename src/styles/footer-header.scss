@@ -31,6 +31,9 @@ header {
   justify-content: flex-end;
   gap: 57px;
   @include mediumTypo(black, 24);
+  .active {
+    text-decoration: underline;
+  }
 }
 
 footer {
