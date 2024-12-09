@@ -1,15 +1,16 @@
 @import "./libs/reset-css.scss";
 @import "./libs/variables.scss";
 @import "./libs/fonction.scss";
-@import "./libs/keyframes.scss";
 @import "./libs/mixin.scss";
-@import "./banner.scss";
-@import "./collapse.scss";
-@import "./error.scss";
 @import "./footer-header.scss";
-@import "./home.scss";
-@import "./carousel.scss";
-@import "./housingPage.scss";
+@import "./components/banner.scss";
+@import "./components/collapse.scss";
+@import "./components/carousel.scss";
+@import "./components/rating.scss";
+@import "./components/hostProfil.scss";
+@import "./pages/home.scss";
+@import "./pages/housingPage.scss";
+@import "./pages/errorPage.scss";
 @import "./mediaqueries.scss";
 
 

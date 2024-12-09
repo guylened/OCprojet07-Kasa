@@ -1,5 +1,6 @@
 
 @media screen and (max-width: 1200px) {
+  /*header*/
   header { 
     padding: 45px 50px 40px; 
     
@@ -31,7 +32,10 @@
 .banner {
 height: 166px;
 border-radius: 10px;
-img {   
+.img1 {   
+  border-radius: 10px;    
+}
+.img2 {   
   border-radius: 10px;    
 }
 }
@@ -43,8 +47,7 @@ transform: translateX(-20%);
 }
 
 /*Page Home*/
-.housingSection {    
-    display: grid;
+.housingSection { 
     grid-template-columns: 1fr 1fr;
     gap: 30px;        
     background-color: $primary-background-color;
@@ -302,6 +305,7 @@ margin: 76px 0;
         justify-content: space-between;
         align-items: left;         
         margin-bottom: 20px;
+        gap:0;
       }
 
      
@@ -334,7 +338,7 @@ margin: 76px 0;
         flex-direction:row-reverse;
         justify-content: space-between;
         align-items: center; 
-        gap : 10px
+        gap : 10px;
       
       }
       

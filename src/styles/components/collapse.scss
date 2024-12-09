@@ -33,6 +33,7 @@
   background-color: $primary-color;
   @include boldTypo(white, 24);
   padding: 10px 15px 10px 15px;
+  cursor: pointer;
 }
 
 .collapse-title2 {
@@ -45,6 +46,7 @@
   background-color: $primary-color;
   @include boldTypo(white, 18);
   padding: 10px 15px 10px 15px;
+  cursor: pointer;
 }
 
 .fa-style {

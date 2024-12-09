@@ -1,0 +1,25 @@
+
+.hostProfil {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; 
+    gap:10px;
+  
+  }
+  
+  .hostName {
+    @include mediumTypo ($primary-color, 18);
+    text-align: right;
+  }
+  
+  .hostPicture {
+    position: relative;  
+    border-radius:50%;
+    width:64px;
+    height:64px;
+    object-fit: cover;
+  }
+  
+  

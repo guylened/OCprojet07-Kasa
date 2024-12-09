@@ -3,8 +3,8 @@ import "../../styles/index.scss";
 import dataHousing from "../../data/dataHousing.json";
 import {Collapse} from "../../components/Collapse";
 import { Carousel } from "../../components/Carousel";
-import { TitleSection } from "./hpTitleSection";
-import { HostSection } from "./hpHostSection";
+import { TitleSection } from "./TitleSection";
+import { HostSection } from "./HostSection";
 
 export const HousingPage = () => {
   const {id} = useParams(); 

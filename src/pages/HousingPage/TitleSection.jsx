@@ -20,8 +20,7 @@ export const TitleSection = ({data}) => {
 }
 
 TitleSection.propTypes = {
-    data: PropTypes.shape({
-    id:PropTypes.string.isRequired,
+    data: PropTypes.shape({    
       location: PropTypes.string.isRequired,
       tags: PropTypes.arrayOf(PropTypes.string).isRequired,
       title: PropTypes.string.isRequired,
