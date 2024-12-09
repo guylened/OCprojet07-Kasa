@@ -24,11 +24,13 @@ export const HousingPage = () => {
       <div className="collapseSection2">        
              <Collapse
               key={`Desc${housingInfo.id}`}
+              classTitle="collapse-title2"
               title="Description"
               content={housingInfo.description}
             />    
             <Collapse
               key={`Equ${housingInfo.id}`}
+              classTitle="collapse-title2"
               title="Equipements"
               content={housingInfo.equipments}
             /> 

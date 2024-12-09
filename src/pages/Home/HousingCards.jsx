@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 export const HousingCards = ({ data }) => {
   return (
-    <div className="housingInsert">
+    <div className="housingSection">
       {data.map((housing) => (
         <Link
           className="housingCard"

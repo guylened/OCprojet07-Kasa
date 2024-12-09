@@ -4,12 +4,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;  
+  gap: 10px;
   margin-top: 30px;
   margin-bottom: 24px;
 }
 
 
 .titleSection {
+  width: 100%;   
   display: flex;
   flex-direction:column;
   justify-content: flex-start;
@@ -18,13 +20,13 @@
 
 .title {
   @include mediumTypo ($primary-color, 36);
+  text-align: left;
   
 }
 
 .location {
   @include mediumTypo (black, 18);
-  
-
+  text-align: left;
 }
 
 .tagSection {
@@ -56,9 +58,10 @@ line-height: normal;
 }
 
 .hostProfil {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center; 
   gap:10px;
 
@@ -83,7 +86,7 @@ line-height: normal;
   justify-content: space-between;
   align-items: center;
   gap: 9px;  
-  margin-top : 30px;
+  margin-top : 27px;
   .fa-style-r {
     color: $primary-color; 
     font-size: large;  

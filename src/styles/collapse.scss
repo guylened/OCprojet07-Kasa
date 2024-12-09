@@ -35,8 +35,21 @@
   padding: 10px 15px 10px 15px;
 }
 
+.collapse-title2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  border-radius: 5px;
+  border: none;
+  background-color: $primary-color;
+  @include boldTypo(white, 18);
+  padding: 10px 15px 10px 15px;
+}
+
 .fa-style {
   transition: all 140ms ease-in-out;
+  font-size: x-large;
 }
 .active .fa-style {
   transform: rotate(-180deg);

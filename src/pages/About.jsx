@@ -12,7 +12,7 @@ export const About = () => {
       <div className="collapseSection">
         {dataAbout.map((item) => (
           
-          <Collapse key={item.id} title={item.title} content={item.content} />
+          <Collapse key={item.id} classTitle="collapse-title" title={item.title} content={item.content} />
         ))}
       </div>
     </>

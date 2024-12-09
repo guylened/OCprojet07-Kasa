@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/index.scss";
 import PropTypes from "prop-types";
 
-export const Collapse = ({ title, content }) => {
+export const Collapse = ({ title, content, classTitle }) => {
   const [active, setActive] = useState(false);
   const icon = (
     <i
@@ -16,7 +16,7 @@ export const Collapse = ({ title, content }) => {
 
   return (
     <div className={`collapse-card ${active && "active"}`}>
-      <div className="collapse-title" onClick={handleToogle}>
+      <div className={classTitle} onClick={handleToogle}>
         {title}
         {icon}
       </div>
@@ -34,6 +34,7 @@ export const Collapse = ({ title, content }) => {
 }
 
 Collapse.propTypes = {
+  classTitle : PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.oneOfType([
     PropTypes.string,
