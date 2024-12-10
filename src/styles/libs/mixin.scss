@@ -1,37 +1,35 @@
 @import "./fonction.scss";
 
+//Typo normale collapseContent
 
-//Typo normale collapseContent 
-
-@mixin regularTypo ($f-s) {
-    font-family: 'Montserrat', sans-serif;
-    color: black;      
-    font-size: rem($f-s);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 142.6%;
+@mixin regularTypo($f-s) {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: rem($f-s);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.6%;
 }
 
 //Typo medium copyright  - messageError -linkhomeerror
 //navlink - housinglocation -housingtitle - host
 
-@mixin mediumTypo ($f-c, $f-s) {
-    font-family: 'Montserrat', sans-serif;
-   color: $f-c;
-    text-align: center;
-    font-size: rem($f-s);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
+@mixin mediumTypo($f-c, $f-s) {
+  font-family: "Montserrat", sans-serif;
+  color: $f-c;
+  text-align: center;
+  font-size: rem($f-s);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
 }
 
-//Typo bold housingCardText - bannerTitle - collapseTitle - errorstatus - tag 
-@mixin boldTypo ($f-c, $f-s) {
-    font-family: 'Montserrat', sans-serif;
-    color: $f-c;    
-    font-size: rem($f-s);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 142.6%;
+//Typo bold housingCardText - bannerTitle - collapseTitle - errorstatus - tag
+@mixin boldTypo($f-c, $f-s) {
+  font-family: "Montserrat", sans-serif;
+  color: $f-c;
+  font-size: rem($f-s);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
 }
-

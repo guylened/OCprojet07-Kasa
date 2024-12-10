@@ -1,375 +1,328 @@
-
 @media screen and (max-width: 1200px) {
   /*header*/
-  header { 
-    padding: 45px 50px 40px; 
-    
+  header {
+    padding: 45px 50px 40px;
 
-    .nav {            
-        gap: 42px;
-        @include mediumTypo(black, 18);
-        text-transform: uppercase;
-      }
-}
-
-
- /*footer*/
- footer {
-  margin-top: 40px;
-  padding-bottom: 45px;
- 
-  .contentFooter {
-    gap: 20px;
+    .nav {
+      gap: 42px;
+      @include mediumTypo(black, 18);
+      text-transform: uppercase;
+    }
   }
-  
-  .copyright {
-      @include mediumTypo(white, 18);      
+
+  /*footer*/
+  footer {
+    margin-top: 40px;
+    padding-bottom: 45px;
+
+    .contentFooter {
+      gap: 20px;
+    }
+
+    .copyright {
+      @include mediumTypo(white, 18);
       padding: 0 10px;
-    }        
-}
+    }
+  }
 
-/*Banner*/
-.banner {
-height: 166px;
-border-radius: 10px;
-.img1 {   
-  border-radius: 10px;    
-}
-.img2 {   
-  border-radius: 10px;    
-}
-}
+  /*Banner*/
+  .banner {
+    height: 166px;
+    border-radius: 10px;
+    .img1 {
+      border-radius: 10px;
+    }
+    .img2 {
+      border-radius: 10px;
+    }
+  }
 
-.bannerTitle {
-left: 35%;   
-transform: translateX(-20%);   
-@include boldTypo(white, 32);
-}
+  .bannerTitle {
+    left: 35%;
+    transform: translateX(-20%);
+    @include boldTypo(white, 32);
+  }
 
-/*Page Home*/
-.housingSection { 
+  /*Page Home*/
+  .housingSection {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;        
+    gap: 30px;
     background-color: $primary-background-color;
     border-radius: 0;
-    padding: 0 ;
-    margin-top: 40px;  
+    padding: 0;
+    margin-top: 40px;
   }
 
   .housingCard {
-    
-    height: 280px;         
+    height: 280px;
   }
-    
-/*collaspe*/
-.collapseSection {
+
+  /*collaspe*/
+  .collapseSection {
     gap: 20px;
-    margin-top: 30px;  
+    margin-top: 30px;
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   .collapseSection2 {
     gap: 50px;
     margin-top: 15px;
-    
   }
-  
-  
+
   .collapse-title {
-   @include boldTypo(white, 18);
+    @include boldTypo(white, 18);
     padding: 7px 10px;
   }
 
   .collapse-title2 {
     @include boldTypo(white, 16);
-     padding: 7px 10px;
-   }
-  
-      
-  .collapse-content {        
-    @include regularTypo(14);        
+    padding: 7px 10px;
   }
 
-  .active .collapse-content {        
+  .collapse-content {
+    @include regularTypo(14);
+  }
+
+  .active .collapse-content {
     padding: 15px;
   }
- 
-/*Carousel*/
-.carousel {
-         
+
+  /*Carousel*/
+  .carousel {
     height: 255px;
   }
-  
+
   .slide {
     border-radius: 10px;
-     
   }
-        
+
   .arrow {
     width: 24px;
     height: 24px;
-    
   }
-        
+
   .arrow-left {
     left: 1.3rem;
   }
-  
+
   .arrow-right {
     right: 1.3rem;
   }
-  
+
   .carouselCounter {
-     bottom: 10px;       
-    @include mediumTypo (white, 16);  
-   
+    bottom: 10px;
+    @include mediumTypo(white, 16);
   }
 
-/*Page Logement*/
+  /*Page Logement*/
 
-.infoSection {  
+  .infoSection {
     margin-top: 15px;
     margin-bottom: 25px;
   }
 
-    
   .title {
-    @include mediumTypo ($primary-color, 24);
-    text-align: left;
-    
-  }
-  
-  .location {
-    @include mediumTypo (black, 16);
+    @include mediumTypo($primary-color, 24);
     text-align: left;
   }
 
-  
+  .location {
+    @include mediumTypo(black, 16);
+    text-align: left;
+  }
+
   .tagSection {
-    margin-top: 10px;  
+    margin-top: 10px;
     gap: 7px;
   }
-  
+
   .tag {
-    @include boldTypo (white, 11);           
-  
+    @include boldTypo(white, 11);
   }
 
   .hostName {
-    @include mediumTypo ($primary-color, 16);    
+    @include mediumTypo($primary-color, 16);
     text-align: right;
   }
-  
+
   .hostPicture {
-    width:54px;
-    height:54px;   
+    width: 54px;
+    height: 54px;
   }
 
- 
-  
   .rating {
     margin-top: 20px;
   }
-          
 
-
-/*Page 404*/
-.errorSection{
-gap: 96px;
-margin: 76px 0;
-}
-
-.errorStatus {
-@include boldTypo($primary-color, 96);
-
-}
-
-.messageError {
-@include mediumTypo($primary-color, 18);
-
-}
-.linkHomeError {
-@include mediumTypo(black, 14);
-
-}
-
-}
-
-
-
-@media screen and (max-width: 767px) { 
-    
-
-    /*Header*/
-
-    header { 
-        padding: 20px 20px 27px; 
-        
-
-        .logoVecHeader {
-            height: 47px;
-            width: 145px;
-        }
-
-        .nav {            
-            gap: 26px;
-            @include mediumTypo(black, 12);            
-          }
-    }
-   
-    /*footer*/
-    footer {
-      margin-top: 27px;
-      padding-bottom: 58px;
-     
-          
-      .copyright {
-          @include mediumTypo(white, 12);
-          width: 134px;
-          height: 46px;          
-        }        
+  /*Page 404*/
+  .errorSection {
+    gap: 96px;
+    margin: 76px 0;
   }
 
-   /*Banner*/
-   .banner {
-    height: 111px;    
-   }
-  
+  .errorStatus {
+    @include boldTypo($primary-color, 96);
+  }
+
+  .messageError {
+    @include mediumTypo($primary-color, 18);
+  }
+  .linkHomeError {
+    @include mediumTypo(black, 14);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /*Header*/
+
+  header {
+    padding: 20px 20px 27px;
+
+    .logoVecHeader {
+      height: 47px;
+      width: 145px;
+    }
+
+    .nav {
+      gap: 26px;
+      @include mediumTypo(black, 12);
+    }
+  }
+
+  /*footer*/
+  footer {
+    margin-top: 27px;
+    padding-bottom: 58px;
+
+    .copyright {
+      @include mediumTypo(white, 12);
+      width: 134px;
+      height: 46px;
+    }
+  }
+
+  /*Banner*/
+  .banner {
+    height: 111px;
+  }
+
   .bannerTitle {
-    left: 30%;   
-    transform: translateX(-15%);   
+    left: 30%;
+    transform: translateX(-15%);
     @include boldTypo(white, 24);
   }
 
-    /*Page Home*/
-    .housingSection {        
-        grid-template-columns: 1fr;
-        row-gap: 20px;      
-       
-        margin-top: 22px;  
-      }
+  /*Page Home*/
+  .housingSection {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
 
-      .housingCard {
-        
-        height: 255px;         
-      }
-        
-    /*collaspe*/
-    .collapseSection {        
-        margin-top: 20px;  
-        
-      }
-      
-      .collapseSection2 {
-        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: 13px;
-        
-      }
-      
-      
-      
-      .collapse-title {
-       @include boldTypo(white, 13);       
-      }
-      
-      .collapse-title2 {
-        @include boldTypo(white, 13);         
-       }
-          
-      .collapse-content {        
-        @include regularTypo(12);        
-      }
+    margin-top: 22px;
+  }
 
-      .fa-style {
-        font-size: large;
-      }
-    /*Carousel*/
-    
-      
-      .carouselCounter {              
-        @include mediumTypo (white, 13);  
-       
-      }
+  .housingCard {
+    height: 255px;
+  }
 
-    /*Page Logement*/
+  /*collaspe*/
+  .collapseSection {
+    margin-top: 20px;
+  }
 
-    .infoSection {
-      width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: left;         
-        margin-bottom: 20px;
-        gap:0;
-      }
+  .collapseSection2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 13px;
+  }
 
-     
-      
-      .title {
-        @include mediumTypo ($primary-color, 18);
-        text-align: left;
-        
-      }
-      
-      .location {
-        @include mediumTypo (black, 14);
-        text-align: left;    
-      }
-      
-      .tagSection {
-        margin-top: 7px;          
-      }
-      
-      .tag {
-        @include boldTypo (white, 10);           
-      
-      }
-      
-      
-      .hostSection {
-        width: 100%;
-        margin-top: 16px;
-        display: flex;
-        flex-direction:row-reverse;
-        justify-content: space-between;
-        align-items: center; 
-        gap : 10px;
-      
-      }
-      
-           
-      .hostName {
-        @include mediumTypo ($primary-color, 12);      
-        text-align: right;  
-      }
-      
-      .hostPicture {        
-        width:32px;
-        height:32px;        
-      }
-      
-      
-      .rating {
-        gap: 5px;  
-        margin-top : 0px;
-        .fa-style-r {          
-          font-size: small;
-        }
-        .fa-style-g {          
-          font-size: small;
-        }
-            
-      }
+  .collapse-title {
+    @include boldTypo(white, 13);
+  }
 
-   /*Page 404*/
-   .errorSection{
+  .collapse-title2 {
+    @include boldTypo(white, 13);
+  }
+
+  .collapse-content {
+    @include regularTypo(12);
+  }
+
+  .fa-style {
+    font-size: large;
+  }
+  /*Carousel*/
+
+  .carouselCounter {
+    @include mediumTypo(white, 13);
+  }
+
+  /*Page Logement*/
+
+  .infoSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 20px;
+    gap: 0;
+  }
+
+  .title {
+    @include mediumTypo($primary-color, 18);
+    text-align: left;
+  }
+
+  .location {
+    @include mediumTypo(black, 14);
+    text-align: left;
+  }
+
+  .tagSection {
+    margin-top: 7px;
+  }
+
+  .tag {
+    @include boldTypo(white, 10);
+  }
+
+  .hostSection {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hostName {
+    @include mediumTypo($primary-color, 12);
+    text-align: right;
+  }
+
+  .hostPicture {
+    width: 32px;
+    height: 32px;
+  }
+
+  .rating {
+    gap: 5px;
+    margin-top: 0px;
+    .fa-style-r {
+      font-size: small;
+    }
+    .fa-style-g {
+      font-size: small;
+    }
+  }
+
+  /*Page 404*/
+  .errorSection {
     gap: 113px;
     margin: 86px 0;
   }
-    
 }

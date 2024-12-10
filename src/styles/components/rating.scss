@@ -1,18 +1,15 @@
-
 .rating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 9px;  
-    margin-top : 27px;
-    .fa-style-r {
-      color: $primary-color; 
-      font-size: large;  
-    }
-    .fa-style-g {
-      color: $mediumgrey;
-      font-size: large;
-    }
-  
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9px;
+  margin-top: 27px;
+  .fa-style-r {
+    color: $primary-color;
+    font-size: large;
   }
+  .fa-style-g {
+    color: $mediumgrey;
+    font-size: large;
+  }
+}

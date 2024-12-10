@@ -1,31 +1,28 @@
-
 .infoSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;  
+  align-items: flex-start;
   gap: 10px;
   margin-top: 30px;
   margin-bottom: 24px;
 }
 
-
 .titleSection {
-  width: 100%;   
+  width: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .title {
-  @include mediumTypo ($primary-color, 36);
+  @include mediumTypo($primary-color, 36);
   text-align: left;
-  
 }
 
 .location {
-  @include mediumTypo (black, 18);
+  @include mediumTypo(black, 18);
   text-align: left;
 }
 
@@ -33,26 +30,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;  
+  margin-top: 20px;
   gap: 7px;
 }
 
 .tag {
-  @include boldTypo (white, 14);   
-  vertical-align:middle; 
+  @include boldTypo(white, 14);
+  vertical-align: middle;
   text-align: center;
   padding: 2px 20px;
   border-radius: 10px;
-background: $primary-color;
-line-height: normal;
-
+  background: $primary-color;
+  line-height: normal;
 }
-
 
 .hostSection {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end; 
-
+  align-items: flex-end;
 }

@@ -1,7 +1,6 @@
 import "../styles/index.scss";
 import PropTypes from "prop-types";
 
-
 export const Banner = ({ imgSrc, isTitle, style }) => {
   return (
     <div className="banner">
@@ -14,7 +13,7 @@ export const Banner = ({ imgSrc, isTitle, style }) => {
 };
 
 Banner.propTypes = {
-  imgSrc : PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
   isTitle: PropTypes.bool.isRequired,
   style: PropTypes.string.isRequired,
 };

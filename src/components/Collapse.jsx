@@ -20,21 +20,23 @@ export const Collapse = ({ title, content, classTitle }) => {
         {title}
         {icon}
       </div>
-      <div className={`collapse-content ${active && "active"}`}>{ Array.isArray(content) ? (
-                <ul>
-                  {content.map((contentItem) => (
-                    <li key={contentItem}>{contentItem}</li>
-                  ))}
-                </ul>
-              ) : (
-                content
-              )}</div>
+      <div className={`collapse-content ${active && "active"}`}>
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((contentItem) => (
+              <li key={contentItem}>{contentItem}</li>
+            ))}
+          </ul>
+        ) : (
+          content
+        )}
+      </div>
     </div>
   );
-}
+};
 
 Collapse.propTypes = {
-  classTitle : PropTypes.string.isRequired,
+  classTitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.oneOfType([
     PropTypes.string,

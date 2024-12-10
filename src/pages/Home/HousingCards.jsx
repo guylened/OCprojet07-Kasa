@@ -2,7 +2,6 @@ import "../../styles/index.scss";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-
 export const HousingCards = ({ data }) => {
   return (
     <div className="housingSection">
@@ -20,7 +19,7 @@ export const HousingCards = ({ data }) => {
       ))}
     </div>
   );
-}
+};
 
 HousingCards.propTypes = {
   data: PropTypes.arrayOf(

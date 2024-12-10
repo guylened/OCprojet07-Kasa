@@ -13,7 +13,6 @@
 @import "./pages/errorPage.scss";
 @import "./mediaqueries.scss";
 
-
 :root {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -23,8 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;  
-     
+  align-items: center;
 }
 
 a {
@@ -39,36 +37,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   width: 100%;
-  height: 100vh;  
-  max-width: 1440px;  
+  height: 100vh;
+  max-width: 1440px;
 }
 
-#root { 
+#root {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
 }
 
-main {  
-  width: 100%; 
-  padding: 0 100px;  
+main {
+  width: 100%;
+  padding: 0 100px;
 }
 
 @media screen and (max-width: 1200px) {
-  main {  
-    padding:  0 50px;        
+  main {
+    padding: 0 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-   
-   main {  
-    padding:  0 20px;        
+  main {
+    padding: 0 20px;
   }
-
- }
+}

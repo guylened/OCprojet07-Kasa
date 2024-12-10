@@ -6,8 +6,8 @@ import arrowRight from "../assets/arrowRight.svg";
 
 export const Carousel = ({ data }) => {
   const arrayPictures = data.pictures;
-  const title = data.title;  
-  
+  const title = data.title;
+
   const [slide, setSlide] = useState(0);
   const nextSlide = () => {
     setSlide(slide === arrayPictures.length - 1 ? 0 : slide + 1);
@@ -43,7 +43,7 @@ export const Carousel = ({ data }) => {
           className="arrow arrow-right"
         />
         <div className="carouselCounter">
-        {slide + 1} / {arrayPictures.length}
+          {slide + 1} / {arrayPictures.length}
         </div>
       </div>
     </>
