@@ -1,4 +1,4 @@
-import { useRouteError } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 import "../styles/index.scss";
 import { Header } from "../layout/Header.jsx";
 import { Footer } from "../layout/Footer.jsx";
@@ -15,10 +15,10 @@ export const ErrorPage = () => {
         <div className="errorSection">
           <p className="errorStatus">404</p>
           <p className="messageError">{p}</p>
-          <a href="./" className="linkHomeError">
+          <Link to={`./`} className="linkHomeError">
             {" "}
             {a}
-          </a>
+          </Link>
         </div>
       </main>
       <Footer />
